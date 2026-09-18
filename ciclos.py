@@ -1,6 +1,5 @@
 #EJERCICIOS EN CLASE
 #Ejercicio de ejemplo
-'''
 # Ejercicio 1: Mostrar la tabla de multiplicar de un número
 numero = int(input("Ingrese un número para ver su tabla de multiplicar: "))
 
@@ -100,7 +99,7 @@ while True:
 
     else:
         print("Opción no válida. Intenta nuevamente.")
-'''
+
 #Punto 5: Registro de notas y calculo de promedio
 estudiante = input("Ingresa el nombre del estudiante: ")
 cantidad = int(input("¿Cuántas notas deseas registrar?: "))
