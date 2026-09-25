@@ -175,3 +175,37 @@ if cantidad > 0:
 
 else:
     print("\nNo se ingresaron valores válidos.")
+
+#EJERCICIO EN CLASE
+
+while True:
+    try:
+        cantidad_notas = int(input("Cuantas notas quieres registrar: "))
+        lista_notas = []
+
+        #Crear for - para solicitar notas
+        for i in range(cantidad_notas):
+            try:
+                nota = float(input("Ingrese nota: "))
+                lista_notas.append(nota)
+            except ValueError:
+                print("Nota Invalida")
+
+        print("Notas Registradas: ", lista_notas)
+        promedio = sum(lista_notas)/len(lista_notas)
+        print(f"Promedio: {promedio:.2f}")
+
+        if promedio <= 2:
+            print("Muy Mal")
+        elif promedio <= 3:
+            print("Basico")
+        elif promedio <= 4:
+            print("Aceptable")
+        elif promedio <= 5:
+            print("Bien")
+        else:
+            print("Valor Invalido")
+        break
+
+    except ValueError:
+        print("Ingrese una cantidad valida")
