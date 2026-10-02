@@ -14,7 +14,7 @@ suma_promedio = 0
 aprobados = 0
 reprobados = 0
 
-for estudiante in range(1, cantidad_estudiantes):
+for estudiante in range(1, cantidad_estudiantes + 1):
     print("Estudiante ", estudiante)
     nombre = input("Nombre: ")
 
